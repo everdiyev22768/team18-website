@@ -1,0 +1,54 @@
+body {
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1vh;
+    min-height: 100vh;
+}
+
+
+#top {
+    font-family: Poppins, Georgia;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    color: #EEEEEE;
+}
+
+#bottom {
+    font-family: Poppins, Georgia;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    color: #EEEEEE;
+}
+
+.text {
+    border: 2px solid #00ADB5;
+    border-width: 10px;
+    border-style: double;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.text::first-letter {
+    font-size: 40px;
+}
+
+#top .text {
+    border-end-end-radius: 5px;
+}
+
+#bottom .text {
+    border-start-start-radius: 5px;
+}
+
+#top figure figcaption, #bottom figure figcaption {
+    text-align: center;
+}
+
+.profiles a {
+    color: #00ADB5;
+    text-decoration: none;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Code Artist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="./media/team_logo.png">
+        <link rel="stylesheet" href="pageHeaderAndFooter.css">
+        <link rel="stylesheet" href="code-artist.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+        <script type="text/javascript" src="code-artist.js"></script>      
+    </head>
+    <body>
+        <header id="welcomeTitle">
+            <a href="./index.html"><img src="./media/team_logo.png" width="64" height="64"></a>
+            <h1>Code Artist</h1>
+          </header>
+  
+          <nav id="pageLinks">   
+            <a href="#" onclick="displayMessage()">I'm Feeling Sad</a>    
+            <a href="./team-members.html">Team Members</a>
+            <a href="./web-project.html">Web Project</a>
+            <a href="./index.html">Home Page</a>
+            <a href="./hour-of-code.html">Hour of Code</a>
+            <a href="./code-artist.html">Code Artist</a>
+            <a id="happyLink" href="#" onclick="getRandomPage()">I'm Feeling Happy</a>
+          </nav>
+
+        <div style="text-align:center">
+            <canvas id="art-canvas" width="640" height="480">
+                Sorry ... your browser doesn't support the HTML5 canvas element.
+            </canvas>        
+        </div>          
+
+        <script type="text/javascript">
+            // Get reference to the 2D context of the canvas
+            let canvas = document.getElementById("art-canvas");
+            let context = canvas.getContext("2d");
+            // Set the color for drawing lines using red, green and blue components
+            // context.strokeStyle = 'rgb(255, 0, 0)';
+            context.strokeStyle = `rgb(${255 * Math.random()}, ${255 * Math.random()}, ${255 * Math.random()})`;
+            DrawSpiral(context);
+        </script>
+
+        <footer id="footer-box">
+            <div class="column1">
+                <div class="logoAndName">
+                    <img id="leftImage" src="./media/team_logo.png" width="64" height="64">
+                    <h2>Team<br/>Kababchilar</h2>
+                  </div>
+              <div class="icons">
+                <a href="https://www.instagram.com/ada_team_18_info_systems/" target="_blank"><img src="./media/logo-instagram.svg" width="32" height="32"/></a>
+                <a href="https://www.facebook.com/100087924013207/posts/510028445271285/?mibextid=WC7FNe&rdid=bZWuZe6f6FgHUbVT" target="_blank"><img src="./media/logo-facebook.svg" width="32" height="32"/></a>
+                <a href="https://www.youtube.com/watch?v=iQeCLCUPicw" target="_blank"><img src="./media/logo-youtube.svg" width="32" height="32"/></a>
+              </div>
+            </div>
+  
+            <div class="column2">
+              <a href="https://www.ada.edu.az/en" target="_blank"><img src="./media/ada_logo_white.png" width="150" height="115"/></a>
+            </div>
+          </footer>
+
+    </body>
+    <script type="text/javascript" src="happy.js"></script>
+    <script type="text/javascript" src="sad.js"></script> 
+</html>

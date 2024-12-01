@@ -1,0 +1,101 @@
+/* Title */
+
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+html {
+    background-color: #222831;
+}
+
+#welcomeTitle {
+    display: flex;
+    width: 100%;
+    background-color: #00ADB5;
+    color: white;
+    justify-content: center;
+    column-gap: 1vw;
+    border-radius: 0px 0px 15px 15px;
+}
+
+#welcomeTitle a {
+    position: absolute;
+    left: 10px;
+    align-self: center;
+}
+
+#welcomeTitle h1 {
+    font-family: Poppins;
+    color: #EEEEEE;
+}
+
+/* Title */
+
+/* Page Links */
+
+#pageLinks {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #00ADB5;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#pageLinks a {
+    font-family: Poppins;
+    font-weight: normal;
+    color: #EEEEEE;
+    text-decoration: none;
+    background-color: #222831;
+    border: 2px solid #ff524a;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+#pageLinks a:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+    background-color: #ff524a;
+}
+
+/* Page Links */
+
+/* Footer */
+
+#footer-box {
+    display: flex;
+    width: 100%;
+    font-family: Poppins;
+    color: #EEEEEE;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3vh;
+    background-color: #393E46;
+    height: 30vh;
+}
+
+#footer-box .column1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vh;
+}
+
+.logoAndName {
+    display: flex;
+    column-gap: 5px;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footer-box .column1 img {
+    align-self: center;
+}

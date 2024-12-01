@@ -1,0 +1,3 @@
+function displayMessage() {
+    alert("Dear Respected Reader,\n\nOur team would like to remind that today, no matter how bad the events are, is not the last day. A person's life can not be decided by the events of a single day, but by the achievments and failures over his lifetime. Remember to wake up everyday with a smile on your face and the intention of achieving greater results. Do not be saddened by failures, as they are a fundamental obstacle in the path towards success.\n\nYours sincerely,\nTeam 18 (Kababchilar)");
+}

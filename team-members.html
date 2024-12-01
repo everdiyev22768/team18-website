@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Habib Amiraslanov 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Team Members</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="./media/team_logo.png">
+        <link rel="stylesheet" href="pageHeaderAndFooter.css">
+        <link rel="stylesheet" href="team-members.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">     
+    </head>
+    <body>
+      <header id="welcomeTitle">
+        <a href="./index.html"><img src="./media/team_logo.png" width="64" height="64"></a>
+        <h1>Team Members</h1>
+      </header>
+  
+      <nav id="pageLinks">   
+        <a href="#" onclick="displayMessage()">I'm Feeling Sad</a>    
+        <a href="./team-members.html">Team Members</a>
+        <a href="./web-project.html">Web Project</a>
+        <a href="./index.html">Home Page</a>
+        <a href="./hour-of-code.html">Hour of Code</a>
+        <a href="./code-artist.html">Code Artist</a>
+        <a id="happyLink" href="#" onclick="getRandomPage()">I'm Feeling Happy</a>
+      </nav>
+
+      <section class="area">
+        <span>
+          <img class="picZone" src="./media/Habib_Amiraslanov.jpg" width="315" height="565"/>
+
+          <span class="changeButtons">
+            
+
+            <button id="prevButton" type="button">
+            <img src="./media/previousButton.svg" width="24" height="24"/>
+            <h2>Prev</h2>
+            </button>
+
+
+            <button id="nextButton" type="button">
+            <h2>Next</h2>
+            <img src="./media/nextButton.svg" width="24" height="24"/>
+            </button>
+
+
+          </span>
+
+        </span>
+        
+        <span class="casePerson">
+          <h2>Information</h2>
+          <table>
+            <tr>
+              <th>Name</th>
+              <td class="name">Habib</td>
+            </tr>
+            <tr>
+              <th>Surname</th>
+              <td class="surname">Amiraslanov</td>
+            </tr>
+            <tr>
+              <th>Age</th>
+              <td class="age">16</td>
+            </tr>
+            <tr>
+              <th>Major</th>
+              <td class="major">BSCS</td>
+            </tr>
+            <tr>
+              <th>Gender</th>
+              <td class="gender">Male</td>
+            </tr>
+            <tr>
+              <th>Role</th>
+              <td class="role">Programmer</td>
+            </tr>
+            <tr>
+              <th>Worked On</th>
+              <td class="workedOn">Team Members</td>
+            </tr>
+          </table>
+        </span>
+
+
+
+        <span class="detailPerson">
+          <h2>Story</h2>
+
+
+
+          <p class="detailed">
+            Habib Amiraslanov, born in 2008, is one of the members of Team 18 of the Principles of Info. Systems course at ADA University. Currently
+            he is studying Bachelor of Science in Computer Science. Habib has extensive experience with playing basketball, having trained for 4 years.
+            In his free time, Habib likes to listen to music and sketch various drawings. Moreover, he enjoys playing games and watching movies. As part
+            of the current project, Habib has been assigned to create the Team Members page of the "Kababchilar" website. 
+          </p>
+
+
+
+        </span>
+      </section>
+
+
+      <footer id="footer-box">
+        <div class="column1">
+          <div class="logoAndName">
+            <img id="leftImage" src="./media/team_logo.png" width="64" height="64">
+            <h2>Team<br/>Kababchilar</h2>
+          </div>
+          <div class="icons">
+            <a href="https://www.instagram.com/ada_team_18_info_systems/" target="_blank"><img src="./media/logo-instagram.svg" width="32" height="32"/></a>
+            <a href="https://www.facebook.com/100087924013207/posts/510028445271285/?mibextid=WC7FNe&rdid=bZWuZe6f6FgHUbVT" target="_blank"><img src="./media/logo-facebook.svg" width="32" height="32"/></a>
+            <a href="https://www.youtube.com/watch?v=iQeCLCUPicw" target="_blank"><img src="./media/logo-youtube.svg" width="32" height="32"/></a>
+          </div>
+        </div>
+  
+        
+        <div class="column2">
+          <a href="https://www.ada.edu.az/en" target="_blank"><img src="./media/ada_logo_white.png" width="150" height="115"/></a>
+        </div>
+      </footer>
+    </body>
+    <script type="text/javascript" src="happy.js"></script>
+    <script type="text/javascript" src="sad.js"></script> 
+    <script type="text/javascript" src="team-members.js"></script>
+</html>

@@ -1,0 +1,120 @@
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.area {
+    display: flex;
+    column-gap: 1vw;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.area .picZone{
+    border-radius: 15px;
+    border: 1px solid #00ADB5;
+}
+
+.changeButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.changeButtons button{
+    display: flex;
+    width: 10vw;
+    font-family: Poppins;
+    font-size: 10px;
+    justify-content: center;
+    color: #EEEEEE;
+    background: #00ADB5;
+    border-radius: 20px;
+    border: 1px solid #00ADB5;
+}
+
+.changeButtons button:hover {
+    transition-duration: 0.5s;
+    background-color: hsl(183, 100%, 25%);
+    cursor: pointer;
+}
+
+.changeButtons img{
+    align-self: center;
+}
+
+.casePerson{
+    border: 1px solid #00ADB5;
+    border-radius: 10px 10px 7px 7px;
+    height: 565px;
+    width: 27%;
+}
+
+.casePerson h2{
+    font-family: Poppins;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    color: #EEEEEE;
+    background-color: #00ADB5;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.casePerson table {
+    font-family: Poppins;
+    font-size: 25px;
+    color: #EEEEEE;
+    margin: 0 auto;
+    border-spacing: 20px 25px;
+}
+
+.casePerson table th{
+    text-align: left;
+    border: 2px solid #00ADB5;
+    border-radius: 5px;
+    background-color: #00ADB5;
+}
+
+.casePerson table td{
+    text-align: right;
+    border-radius: 5px;
+    border: 2px solid #ff524a;
+    background-color: #ff524a;
+}
+
+.detailPerson {
+    border: 1px solid #ff524a;
+    border-radius: 10px 10px 7px 7px;
+    height: 565px;
+    width: 27%;
+}
+
+.detailPerson h2{
+    font-family: Poppins;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    color: #EEEEEE;
+    background-color: #ff524a;
+    border-radius: 7px 7px 0px 0px;
+}
+
+
+.detailPerson p{
+    font-family: Poppins;
+    font-size: 20px;
+    color:#EEEEEE;
+    text-indent: 5px;
+    margin-left: 5px;
+    margin-top: 0;
+}
+
+/*
+:root {
+    --ada-blue: #336178;
+    --ada-red: #ae485e;
+}
+
+body {
+    background-color: var(--ada-blue);
+}
+*/

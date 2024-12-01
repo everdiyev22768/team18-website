@@ -1,0 +1,129 @@
+#marqueeWelcome {
+    font-family: Poppins;
+    font-size: 70px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#marqueeText {
+    display: flex;
+    width: max-content;
+    margin: auto;
+    animation: marquee 6s linear infinite;
+    user-select: none;
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-200%);
+    }
+
+    from {
+        transform: translateX(200%);
+    }
+}
+
+#marqueeTitle {
+    animation: color_change 10s ease-in-out infinite;
+}
+
+@keyframes color_change {
+    from {
+        color: red;
+    }
+
+    20% {
+        color: orange;
+    }
+
+    40% {
+        color: green;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    80% {
+        color: indigo;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+#mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+    column-gap: 1vw;
+    row-gap: 2vh;
+    height: 100%;
+    margin-top: 3vh;
+}
+
+/* This design choice is intentional to make the javascript file work */
+.article0 {
+    border: 1px solid #00ADB5;
+    border-radius: 5px 5px 7px 7px;
+}
+
+.article1 {
+    border: 1px solid #00ADB5;
+    border-radius: 5px 5px 7px 7px;
+}
+
+.article2 {
+    border: 1px solid #00ADB5;
+    border-radius: 5px 5px 7px 7px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.article3 {
+    border: 1px solid #00ADB5;
+    border-radius: 5px 5px 7px 7px;
+    grid-row-start: 2;
+}
+
+
+#mainContent article button {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid #00ADB5;
+    width: 100%;
+    cursor: pointer;
+}
+
+#mainContent article button:hover {
+    transition-duration: 0.5s;
+    background-color: hsl(183, 100%, 25%);
+}
+
+#mainContent article p {
+    font-family: Poppins;
+    font-size: 16px;
+    color: #EEEEEE;
+    border-radius: 0px 0px 7px 7px;
+    margin-top: -1px;
+    width: auto;
+}
+
+/*
+:root {
+    --ada-blue: #336178;
+    --ada-red: #ae485e;
+}
+
+body {
+    background-color: var(--ada-blue);
+}
+
+*/

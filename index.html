@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Elmar Verdiyev 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Welcome Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="./media/team_logo.png">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="pageHeaderAndFooter.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">     
+    </head>
+    <body>
+        <header id="welcomeTitle">
+          <a href="./index.html"><img src="./media/team_logo.png" width="64" height="64"></a>
+          <h1>Team "Kababchilar"</h1>
+        </header>
+
+        <nav id="pageLinks">   
+          <a href="#" onclick="displayMessage()">I'm Feeling Sad</a>    
+          <a href="./team-members.html">Team Members</a>
+          <a href="./web-project.html">Web Project</a>
+          <a href="./index.html">Home Page</a>
+          <a href="./hour-of-code.html">Hour of Code</a>
+          <a href="./code-artist.html">Code Artist</a>
+          <a id="happyLink" href="#" onclick="getRandomPage()">I'm Feeling Happy</a>
+        </nav>
+
+        <a id="close" href="#">
+        <img id="closeImage" src="./media/xButton.svg" width="16" height="16" alt="close button">
+        </a>
+        
+        <section id="marqueeWelcome">
+          <span id="marqueeText">
+            <header id="marqueeTitle">
+              Welcome, Guest!
+            </header>
+          </span>
+        </section>
+
+        <section id="mainContent">
+          <article class="article0">
+            <button type="button" id="collapsible1" onclick="collapse(0)">Who We Are</button>
+            <p>
+              We are 4 members that make up Team 18 of the Principles of Info. Systems course at ADA University. The team consists of: 
+              <br/>1. Elmar Verdiyev
+              <br/>2. Habib Amiraslanov 
+              <br/>3. Kamal Mustafayev
+              <br/>4. Rashid Mustafazada
+              <br/>Each of the team members belong to a different background and adds a unique 
+              attribute to the team in order to make it as diverse as possible. We are a team with similar, yet different interests that have come together 
+              under a common goal: to show what teamwork can achieve. Albeit the difficulties of the challenges faced by the members, we work on them until
+              a solution has been submitted. We are a team that makes the dream work.
+            </p>
+          </article>
+
+          <article class="article1">
+            <button type="button" id="collapsible2" onclick="collapse(1)">What We Do</button>
+            <p>
+              We are assigned to solve challenges in the form of homework by our instructors. The various challenges we have solved until the present include:
+              <br/>1. Building logic gates by using fundamental electronic components and describing the inner-workings of each logic gate.
+              <br/>2. Organizing an Hour of Code event by teaching a group of children the basics of programming and algorithmic-thinking through the use of code blocks.
+              <br/>Once we are presented with the challenges, we meet up and discuss possible methods and solutions to the challenge and divide tasks between members
+              in order to give each of us an opportunity of contribution to the solution. The creation of this website is our 3rd challenge. We will be left with 1 last
+              challenge after completing our current one. 
+            </p>
+          </article>
+
+          <article class="article2">
+            <button type="button" id="collapsible3" onclick="collapse(2)">What Our Passion Is</button>
+            <p>
+              The unique passions and hobbies of the team make it a diverse environment. The technological fields, allow us to exercise our passion and what we believe to be our 
+              hard work. Some of us have passion for mathematics and physics, while others enjoy programming. Some of us also enjoy humanities subjects. Furthermore, each member has 
+              their own hobbies, such as football. Regardless of our differences, it is a common goal to work together to achieve the best.
+            </p>
+          </article>
+
+          <article class="article3">
+            <button type="button" id="collapsible4" onclick="collapse(3)">What to Expect In The Future</button>
+            <p>
+              Unfortunately, we do not have much time left as a team. After 1 more challenge is presented by our instructions, the team will be left without any formal challenges to solve.
+              As the final examinations approach, each member will have to go their own seperate path in order to prepare. However, our collaboration and challenges taught us valuable lessons.
+              Today we know what true teamwork feels like. It is the common challenges faced by our team that taught us what to expect from life after university finishes. This journey is one of the 
+              many towards global citizenship.
+            </p>
+          </article>
+        </section>
+
+        <footer id="footer-box">
+          <div class="column1">
+            <div class="logoAndName">
+              <img id="leftImage" src="./media/team_logo.png" width="64" height="64">
+              <h2>Team<br/>Kababchilar</h2>
+            </div>
+            <div class="icons">
+              <a href="https://www.instagram.com/ada_team_18_info_systems/" target="_blank"><img src="./media/logo-instagram.svg" width="32" height="32"/></a>
+              <a href="https://www.facebook.com/100087924013207/posts/510028445271285/?mibextid=WC7FNe&rdid=bZWuZe6f6FgHUbVT" target="_blank"><img src="./media/logo-facebook.svg" width="32" height="32"/></a>
+              <a href="https://www.youtube.com/watch?v=iQeCLCUPicw" target="_blank"><img src="./media/logo-youtube.svg" width="32" height="32"/></a>
+            </div>
+          </div>
+
+          <div class="column2">
+            <a href="https://www.ada.edu.az/en" target="_blank"><img src="./media/ada_logo_white.png" width="150" height="115"/></a>
+          </div>
+        </footer>
+
+    </body>
+    <script type="text/javascript" src="happy.js"></script>
+    <script type="text/javascript" src="sad.js"></script> 
+    <script type="text/javascript" src="index.js"></script>
+</html>

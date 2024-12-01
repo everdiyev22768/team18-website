@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Rashid Mustafazada 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+  <head>
+    <title>Web Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./media/team_logo.png">
+    <link rel="stylesheet" href="web-project.css">
+    <link rel="stylesheet" href="pageHeaderAndFooter.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">     
+    </head>
+  <body>
+    <header id="welcomeTitle">
+      <a href="./index.html"><img src="./media/team_logo.png" width="64" height="64"></a>
+      <h1>Web Project</h1>
+    </header>
+  
+    <nav id="pageLinks">   
+      <a href="#" onclick="displayMessage()">I'm Feeling Sad</a>    
+      <a href="./team-members.html">Team Members</a>
+      <a href="./web-project.html">Web Project</a>
+      <a href="./index.html">Home Page</a>
+      <a href="./hour-of-code.html">Hour of Code</a>
+      <a href="./code-artist.html">Code Artist</a>
+      <a id="happyLink" href="#" onclick="getRandomPage()">I'm Feeling Happy</a>
+    </nav>
+
+    <div class="container">
+      <div id="top">
+
+
+        <span class="text">
+          The third group assignment of the Principles of Info. Systems course is named "How websites work?".
+          The goal of the assignment is to build a website using HTML, CSS, and Javascript as the technologies,
+          and track the changes on a popular source code hosting website, Github using a version control system tool.
+          Utilization of ready templates and tools except Visual Studio Code is prohibited. The website has to also include
+          no less than 5 web pages, with one dedicated to the creation of art using algorithms. The deadline of the project is December 1st, 2024.
+          This assignment tests the team's knowledge of the common web technologies learnt from the assignment that was published prior to the current one.  
+        </span>
+
+        <figure>
+          <img src="./media/instruction5.png" width="100%">
+          <figcaption>Fig.1 - Instruction &#8470; 5 of Homework &#8470; 3: How websites Work?</figcaption>
+        </figure>
+
+
+
+      </div>
+      
+      
+
+
+      <div id="bottom">
+        <figure>
+          <img src="./media/exCodeCademy.png" width="100%">
+          <figcaption>Fig.2 - Example Codecademy Profile With Achievments</figcaption>
+        </figure>
+
+        <span class="text">
+          Prior to commencing the assignment, the team leader, Elmar Verdiyev, made important design choices.
+          The final decision included the use of "Poppins" as the main font of the website. Furthermore, the color
+          pallete was decided as: #00ADB5, #222831, #EEEEEE, and #393E46. The work of individual members was constantly
+          checked to ensure consistency on all 5 web pages of the website. The checks included ensuring matching fonts and colours
+          were used relative to the initial standards. The only web page greenlighted to ignore the standards minimally was the Hour of Code
+          webpage. This decision was made due to the creator's ability to harmonize, similar to other web pages, with the use of carefully choosen
+          font and design. 
+          
+          <p class="profiles">Codecademy Profiles:
+            <a href="https://www.codecademy.com/profiles/RashidMustafazada" target="_blank">M. Rashid</a>,
+            <a href="https://www.codecademy.com/profiles/ElmarVerdiyev" target="_blank">V. Elmar</a>,
+            <a href="https://www.codecademy.com/profiles/Kamal_Mustafayev" target="_blank">M. Kamal</a>, and
+            <a href="https://www.codecademy.com/profiles/HabibAmiraslanov" target="_blank">A. Habib</a>
+          </p>
+        </span>
+      </div>
+
+      
+    </div>
+
+    <footer id="footer-box">
+      <div class="column1">
+        <div class="logoAndName">
+          <img id="leftImage" src="./media/team_logo.png" width="64" height="64">
+          <h2>Team<br/>Kababchilar</h2>
+        </div>
+        <div class="icons">
+          <a href="https://www.instagram.com/ada_team_18_info_systems/" target="_blank"><img src="./media/logo-instagram.svg" width="32" height="32"/></a>
+          <a href="https://www.facebook.com/100087924013207/posts/510028445271285/?mibextid=WC7FNe&rdid=bZWuZe6f6FgHUbVT" target="_blank"><img src="./media/logo-facebook.svg" width="32" height="32"/></a>
+          <a href="https://www.youtube.com/watch?v=iQeCLCUPicw" target="_blank"><img src="./media/logo-youtube.svg" width="32" height="32"/></a>
+        </div>
+      </div>
+      
+      <div class="column2">
+        <a href="https://www.ada.edu.az/en" target="_blank"><img src="./media/ada_logo_white.png" width="150" height="115"/></a>
+      </div>
+    </footer>
+
+    </body>
+    <script type="text/javascript" src="happy.js"></script>
+    <script type="text/javascript" src="sad.js"></script>
+</html>
