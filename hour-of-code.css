@@ -21,9 +21,9 @@ hr {
 #headerHOC h2 {
     padding: 60px 20px 0 20px;
     color: 	rgb(238,238,238);
-    font-size: 46px;
+    font-size: 36px;
     text-align: center;
-    font-family: Georgia;
+    font-family: Wensley, Naia, Maiah, Sharis, Thomas, Sandover, Aadam, Georgia, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em;
   }
@@ -33,7 +33,7 @@ hr {
     color: rgb(238,238,238);
     text-align: justify;
     padding: 0px 150px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: lighter;
     word-spacing: 0.05em;
     line-height: 2;
